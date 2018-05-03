@@ -9,7 +9,8 @@ public class Game {
 				rolls[roll++] = 10;
 			}
 			else if(scoreCard.charAt(i) == '/') {
-				rolls[roll++] = 10;
+				int diff = 10 - rolls[roll - 1];
+				rolls[roll++] = diff;
 			}
 			else if(scoreCard.charAt(i) == '-') {
 			}
